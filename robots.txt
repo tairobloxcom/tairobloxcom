@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://USERNAME.github.io/tairoblox-hub/sitemap.xml
+Sitemap: https://tairobloxcom.github.io/tairobloxcom/sitemap.xml
