@@ -1,0 +1,250 @@
+/* GitHub Pages Fix for TaiRoblox static export */
+html {
+  margin-top: 0 !important;
+  background: #1c0b00;
+}
+body {
+  margin: 0 !important;
+  background: #fff;
+  overflow-x: hidden;
+}
+#wpadminbar,
+.block-edit-link,
+.edit-block-wrapper,
+.edit-block-button,
+.shortcode-error {
+  display: none !important;
+}
+.header-wrapper,
+.header-main,
+.header-bg-color {
+  background: #335fff !important;
+}
+.header-main {
+  min-height: 63px;
+}
+.header .nav > li > a,
+.header .nav-top-link {
+  color: #fff !important;
+}
+.header .nav > li > a:hover,
+.header .nav-top-link:hover {
+  color: #dfe7ff !important;
+}
+.header-search-form .search-field {
+  border-radius: 999px 0 0 999px !important;
+  background: #fff !important;
+  color: #111 !important;
+}
+.header-search-form .submit-button {
+  border-radius: 0 999px 999px 0 !important;
+  background: #1f47d8 !important;
+  color: #fff !important;
+}
+.header-search-form .submit-button i {
+  color: #fff !important;
+}
+.nav-dropdown,
+.sub-menu {
+  z-index: 9999 !important;
+}
+.has-dropdown:hover > .nav-dropdown,
+.has-dropdown:hover > .sub-menu,
+.has-dropdown.is-open > .nav-dropdown,
+.has-dropdown.is-open > .sub-menu {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.nav-dropdown {
+  background: #fff !important;
+  color: #111 !important;
+}
+.nav-dropdown a,
+.sub-menu a {
+  color: #222 !important;
+}
+.nav-dropdown a:hover,
+.sub-menu a:hover {
+  color: #335fff !important;
+}
+#wrapper,
+#main,
+.page-wrapper,
+.row-main {
+  background: #fff;
+}
+.row {
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.button.primary,
+.button.alert,
+.apk-download-btn,
+.custom-view-more-btn {
+  background: #335fff !important;
+  border-color: #335fff !important;
+  color: #fff !important;
+}
+.button.primary:hover,
+.button.alert:hover,
+.apk-download-btn:hover,
+.custom-view-more-btn:hover {
+  background: #fff !important;
+  color: #335fff !important;
+}
+.custom-view-more {
+  position: relative;
+  max-height: 420px;
+  overflow: hidden;
+  transition: max-height .25s ease;
+}
+.custom-view-more.is-expanded {
+  max-height: none !important;
+}
+.custom-view-more:not(.is-expanded)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 90px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), #fff);
+  pointer-events: none;
+}
+.rating {
+  min-height: 16px;
+}
+.rating .star {
+  color: #ffb400;
+  font-size: 13px;
+  line-height: 1;
+  margin-right: 1px;
+}
+.rating .star.empty {
+  color: #d8d8d8;
+}
+.custom-grid {
+  overflow: visible !important;
+}
+.custom-app-card {
+  min-width: 0;
+}
+.custom-app-card-title {
+  color: #222;
+  text-decoration: none;
+}
+.custom-app-card-title:hover {
+  color: #335fff;
+}
+.homepage-info .col-inner {
+  min-height: 76px;
+}
+.post-info-table,
+table {
+  max-width: 100%;
+}
+.footer-wrapper,
+.absolute-footer {
+  background: #1c0b00 !important;
+  color: #fff !important;
+}
+.footer-wrapper a,
+.absolute-footer a {
+  color: #fff !important;
+}
+.back-to-top,
+#top-link {
+  display: none !important;
+}
+
+/* Mobile drawer fallback */
+.github-mobile-panel {
+  display: none;
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: min(86vw, 320px);
+  z-index: 100000;
+  background: #fff;
+  box-shadow: 0 10px 45px rgba(0,0,0,.28);
+  overflow-y: auto;
+  padding: 18px;
+}
+.github-mobile-panel.is-active {
+  display: block;
+}
+.github-mobile-panel a {
+  display: block;
+  color: #222;
+  padding: 11px 6px;
+  border-bottom: 1px solid #eee;
+  font-weight: 700;
+}
+.github-mobile-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(0,0,0,.45);
+}
+.github-mobile-overlay.is-active {
+  display: block;
+}
+.github-close {
+  border: 0;
+  background: #335fff;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+/* Fix GitHub Pages /root spacing */
+@media (min-width: 850px) {
+  .mfp-content,
+  .stuck,
+  button.mfp-close {
+    top: 0 !important;
+  }
+  .is-full-height {
+    height: 100vh !important;
+  }
+}
+@media (max-width: 849px) {
+  .header-main {
+    min-height: 70px;
+  }
+  #logo img {
+    max-height: 56px !important;
+  }
+  .header-search-form {
+    display: none !important;
+  }
+  .custom-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .custom-app-card-title {
+    width: auto !important;
+  }
+  .news-excerpt {
+    width: auto !important;
+  }
+}
+@media (max-width: 549px) {
+  .row {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  h1 {
+    font-size: 24px !important;
+    line-height: 1.25 !important;
+  }
+  .homepage-info {
+    padding: 0 10px;
+  }
+}

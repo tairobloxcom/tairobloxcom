@@ -1,32 +1,54 @@
-# Tải Roblox GitHub Pages Hub
+# TaiRoblox GitHub Pages
 
-Đây là bộ mã nguồn HTML/CSS tĩnh dùng để chạy trên GitHub Pages cho thương hiệu **Tải Roblox**.
+Bộ code tĩnh dành cho GitHub Pages, được chuyển từ HTML WordPress/Flatsome của TaiRoblox.
 
-## Cấu trúc file
+## Cấu trúc
 
 ```txt
-.
+tairoblox-github-pages-y-chang-fixed/
 ├── index.html
+├── README.md
 ├── robots.txt
 ├── sitemap.xml
-├── README.md
+├── .nojekyll
 └── assets/
-    └── style.css
+    ├── github-fix.css
+    └── github-fix.js
 ```
 
-## Cách dùng
+## Cách deploy lên GitHub Pages
 
-1. Tạo repo GitHub mới, ví dụ: `tairoblox-hub`.
-2. Upload toàn bộ file trong thư mục này lên repo.
-3. Vào `Settings > Pages`.
-4. Chọn `Deploy from a branch`.
-5. Chọn branch `main`, thư mục `/root`, sau đó bấm `Save`.
-6. Sửa lại các URL trong `index.html`, `robots.txt`, `sitemap.xml` theo username GitHub thật.
+1. Tạo repository mới, ví dụ: `tairoblox-hub`
+2. Upload toàn bộ file trong thư mục này lên repo
+3. Đảm bảo `index.html` nằm ngoài cùng repo
+4. Vào `Settings` → `Pages`
+5. Chọn `Deploy from a branch`
+6. Branch: `main`
+7. Folder: `/root`
+8. Bấm `Save`
 
-## Link chính thức
+## Việc cần sửa sau khi có link thật
 
-Website chính thức: https://tairoblox.com/
+Mở các file sau:
 
-## Lưu ý
+- `index.html`
+- `robots.txt`
+- `sitemap.xml`
 
-Repo này chỉ dùng làm trang giới thiệu / tài nguyên công khai trên GitHub Pages. Không nên lưu trữ file APK, file thực thi hoặc nội dung tải xuống trực tiếp trong repo.
+Tìm:
+
+```txt
+USERNAME
+```
+
+Đổi thành username GitHub thật của bạn.
+
+Ví dụ:
+
+```txt
+https://tairobloxcom.github.io/tairoblox-hub/
+```
+
+## Ghi chú
+
+Bản này dùng ảnh và một số CSS public từ `tairoblox.com` để giữ giao diện giống website gốc hơn. Nếu website gốc đổi đường dẫn ảnh/CSS hoặc chặn hotlink, bạn nên tải ảnh về thư mục `assets/images/` và cập nhật lại đường dẫn.
